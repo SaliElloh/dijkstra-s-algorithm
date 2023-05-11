@@ -1,5 +1,5 @@
 # dijkstra-s-algorithm
-This project utilized Dijkstra's algorithm to determine the shortest path between two vertices in a G set. A function was developed to identify the path with the lowest cost from the source node to the destination node, and sub costs were labeled along with the total path cost. To demonstrate the results, the code was executed three times with different source and destination vertices.
+This project implements Dijkstra's algorithm to find the shortest path between two vertices in a G set. 
 
 For more information about me, please visit my LinkedIn:
 
@@ -9,21 +9,18 @@ For more information about me, please visit my LinkedIn:
 
 ## About The Project:
 
-### Backgroud Terminology: 
+### Background Terminology: 
 
 It's important to have a good idea about Dijkstra's to understand the terminology used throughout this project.
 
-Please visit the following links for a more detailed explanation of the concept:
-
-[https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-linear-regression/#:~:text=Linear%20regression%20is%20an%20algorithm,machine%20learning%20for%20predictive%20analysis.
-](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+Please visit the following links for a more detailed explanation of the concept: <a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/" style="display:inline-block;background-color:#8a8a8a;color:#fff;font-size:16px;padding:10px;border-radius:5px;text-decoration:none;">Dijkstra's Algorithm</a>
 
 ### Introduction:
 
-The objective of this project is to apply Dijkstra's algorithm on a G1 set to determine the shortest paths in the graph. A new function called "printLeastCostPath()" was developed to print the path with the least cost from the source node to the destination node. The paper presents the results of three source nodes to their respective destination nodes as an example. 
+The objective of this project is to apply Dijkstra's algorithm on a G1 set to determine the shortest paths in the graph. A new function called "printLeastCostPath()" was developed to print the path with the least cost from the source node to the destination node. The code was executed three times with different source and destination vertices to demonstrate the results.
 
 These three source nodes are: 
-- Source vertex 1 to destination vertex 107 had a total path cost of 107
+- Source vertex 1 to destination vertex 107 had a total path cost of 107.
 - Source vertex 1 to destination vertex 101 had a total cost path of 101.
 - Source vertex 5 to destination vertex 80 had a total path cost of 144.
 
@@ -31,51 +28,43 @@ Furthermore, the subpaths and their cost to the destination nodes were also disp
 
 ### Dataset:
 
-Data used in this paper is the standard set of graphs “G-set” that is often used for testing and comparison of various algorithms.The G-set could be accessed using the Stanford libraries.
+Data used in this project is the standard set of graphs “G-set” that is often used for testing and comparison of various algorithms.The G-set could be accessed using the <a href="https://web.stanford.edu/~yyye/yyye/Gset/" style="display:inline-block;background-color:#8a8a8a;color:#fff;font-size:16px;padding:10px;border-radius:5px;text-decoration:none;">Stanford Libraries</a>.
 
-Stanford libraries link: https://web.stanford.edu/~yyye/yyye/Gset/
-
-Details: 
-1. The set picked in this paper is the G1 set, which has 800 vertices and 19716 edges.
-2. The weights associated with the edges were all 1
+About the Data:
+1. The set picked in this project is the G1 set, which has 800 vertices and 19716 edges.
+2. The weights associated with the edges were all 1.
 3. To make the graph weighted, a list of randomly generated weights were edited into the third column, as shown in the image below.
 
 
 ![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/c2681c19-4a0c-451c-ad28-c072dbdf6964)
 
-Figure: Vertex one and all the vertices connected to it are shown in the first and second
-column, respectively. The third column is the “weight” or the cost to get between vertex one (in this example) and the connecting vertices
+ <small><b>Figure:</b> Vertex one and all the vertices connected to it are shown in the first and second column, respectively. The third column is the “weight” or the cost to get between vertex one (in this example) and the connecting vertices.</small>
+
+
 
 ### Algorithm explained:
 
-Dijiktra’s algorithm calculates the lowest cost or "cheapest way" to travel between two points or vertices in a <b>weighted graph</b>. The algorithm utilizes nodes to represent graph points and assigns them tentative distance values to determine the shortest path from the source node to other nodes in the graph.
+Dijktra’s algorithm calculates the lowest cost or "cheapest way" to travel between two points or vertices in a <b>weighted graph</b>. The algorithm utilizes nodes to represent graph points and assigns them tentative distance values to determine the shortest path from the source node to other nodes in the graph.
 
 The steps of the algorithm go as follows: 
 
-1) Mark all vertices as unvisited, then create the unvisited set, which is a collection of all
-undiscovered nodes.
-2) Assign a tentative distance value to each node: Mark all nodes with an infinity distance at
-first, except the source node, which is marked with a zero distance. Because no path is
-known between any other vertex aside from the source, all tentative distances have been
-originally set to infinity.
+1) Mark all vertices as unvisited, then create the unvisited set, which is a collection of all undiscovered nodes.
+2) Assign a tentative distance value to each node: Mark all nodes with an infinity distance at first, except the source node, which is marked with a zero distance. Because no path is known between any other vertex aside from the source, all tentative distances have been originally set to infinity.
 3) Consider all of your current node V's univisited neighbors U.
 4) We update the cost[U] + weight of UV if it counts a lower cost than the existing cost[v].
 5) We mark the code as visited and remove it from the unvisited collection once we have
-finished taking into account all of the unvisited neighbors of this particular node. There
-will be no further visit to this node.
-6) if the destination has been checked off as visited or if the shortest distance between nodes in the unvisited set is infinite, then the algorithm is then stopped. There is no
-connection between the node and the other nodes that haven't been visited.
-7) As an alternative, we can choose the unvisited node marked with the least tentative
-distance, set it as the new current node, and then repeat these steps U–V times, or until all
-the vertices have been visited.
+finished taking into account all of the unvisited neighbors of this particular node. There will be no further visit to this node.
+6) if the destination has been checked off as visited or if the shortest distance between nodes in the unvisited set is infinite, then the algorithm is then stopped. There is no connection between the node and the other nodes that haven't been visited.
+7) As an alternative, we can choose the unvisited node marked with the least tentative distance, set it as the new current node, and then repeat these steps U–V times, or until all the vertices have been visited.
 
 ## Getting Started:
 
-To get the project running, there's a couple of programs and steps needed.
+To get the project running, there's a few programs and steps needed.
 
 ### Built With:
 
 Language used: [![C++](https://img.shields.io/badge/-C++-blue?style=flat&logo=C%2B%2B&logoColor=white)]()
+
 IDE used: [![Built with Visual Studio Code](https://img.shields.io/badge/Built_with-Visual_Studio_Code-blue.svg)](https://code.visualstudio.com/)
 
 ### Prerequisites:
@@ -86,14 +75,12 @@ IDE used: [![Built with Visual Studio Code](https://img.shields.io/badge/Built_w
 
 ### Steps to run the code:
 
- Download the "dijkstras-algorithm" zip file found in the uploaded files and use the files inside it to run the code. 
+ Download the "dijkstras-algorithm" zip file found in the uploaded files.
     
 ## Results: 
 
 This code was tested using three different source and destination vertices. The program outputted the distance cost of each subpath and the total cost for the path when source vertex 1 and destination node 150 were inputted. The same test was repeated for source vertex 1 and destination vertex 101, and source vertex 5 and destination vertex 80. 
     
-Refer to the attached file which includes a step-by-step outline of the code
-
 ![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/ac6e43a1-61f9-4c6c-ad17-c6d9fc40d8ad)
 
 
@@ -116,8 +103,6 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [LinkedIn.js]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [LinkedIn-url]: https://www.linkedin.com/in/salielloh12/
-[Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
-[Tensorflow-url]: https://www.tensorflow.org/
 
 
 
