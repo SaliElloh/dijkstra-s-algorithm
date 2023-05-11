@@ -1,5 +1,5 @@
 # dijkstra-s-algorithm
-In this project,  Dijiktra’s algorithm is used to find the shortest path between two vertices in a G set. The code was run three times with three different source vertices and destination vertices to display the results.
+This project utilized Dijkstra's algorithm to determine the shortest path between two vertices in a G set. A function was developed to identify the path with the lowest cost from the source node to the destination node, and sub costs were labeled along with the total path cost. To demonstrate the results, the code was executed three times with different source and destination vertices.
 
 For more information about me, please visit my LinkedIn:
 
@@ -20,45 +20,37 @@ Please visit the following links for a more detailed explanation of the concept:
 
 ### Introduction:
 
-The aim of this paper is to implement Dijiktra’s algorithm on a G1 set to find the shortest
-paths in the graph. A function that prints the least cost path from the source to the destination
-node was developed, named printLeastCostPath(). The results of three source nodes to their
-destination nodes were displayed as an example:
+The objective of this project is to apply Dijkstra's algorithm on a G1 set to determine the shortest paths in the graph. A new function called "printLeastCostPath()" was developed to print the path with the least cost from the source node to the destination node. The paper presents the results of three source nodes to their respective destination nodes as an example. 
+
+These three source nodes are: 
 - Source vertex 1 to destination vertex 107 had a total path cost of 107
 - Source vertex 1 to destination vertex 101 had a total cost path of 101.
 - Source vertex 5 to destination vertex 80 had a total path cost of 144.
-the subpaths and their cost to the destination nodes (107, 101, 80) were also displayed.
-The time complexity of this algorithm is O(V2
-), where V is the number of vertices in the graph.
-As for the space complexity, it is also O(V2
-) because a 2d matrix representation of the matrix
-was used, with its data populated from the input file downloaded from the Gset standard set of
-graphs used for testing and comparison of various algorithms.
 
+Furthermore, the subpaths and their cost to the destination nodes were also displayed. The algorithm's time complexity is O(V^2), where V represents the number of vertices in the graph. Additionally, the space complexity is also O(V^2) because a 2d matrix representation of the matrix was used, with data obtained from the input file downloaded from the Gset standard set of graphs that are used for testing and comparing different algorithms.
 
 ### Dataset:
 
-Data used in this paper is the standard set of graphs “G-set” that is often used for testing
-and comparison of various algorithms. These G sets could be accessed using the Stanford
-libraries. The set picked in this paper is the G1 set, which has 800 vertices and 19716 edges, as
-shown on the top row in figure 2.
-The weights that came in the files were all 1; the third column was edited into a list of
-randomly generated weights. This was done by running a python script which read the file and
-copied it to a new one replacing the 1 with a random number.
+Data used in this paper is the standard set of graphs “G-set” that is often used for testing and comparison of various algorithms.The G-set could be accessed using the Stanford libraries.
 
-![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/dc3c4612-64d2-4081-92d4-ac060fce7c4b)
-Figure 1: Vertex one and all the vertices connected to it are shown in the first and second
-column, respectively. The third column is the “weight” or the cost to get between vertex one (in
-this example) and the connecting vertices
+Stanford libraries link: https://web.stanford.edu/~yyye/yyye/Gset/
+
+Details: 
+1. The set picked in this paper is the G1 set, which has 800 vertices and 19716 edges.
+2. The weights associated with the edges were all 1
+3. To make the graph weighted, a list of randomly generated weights were edited into the third column, as shown in the image below.
 
 
-### :
+![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/c2681c19-4a0c-451c-ad28-c072dbdf6964)
 
+Figure: Vertex one and all the vertices connected to it are shown in the first and second
+column, respectively. The third column is the “weight” or the cost to get between vertex one (in this example) and the connecting vertices
 
+### Algorithm explained:
 
-### PseudoCode used:
+A graph is a mathematical construct consisting of sets of vertices and edges. Dijiktra’s algorithm calculates the lowest cost or "cheapest way" to travel between two points or vertices in a <b>weighted graph</b>. The algorithm utilizes nodes to represent graph points and assigns them tentative distance values to determine the shortest path from the source node to other nodes in the graph.
 
-In this section, I'll delve deep into the psuedocode used throughout this project. This will help you understand the general structure of the code prior to running it.
+The steps of the algorithm go as follows: 
 
 1) Mark all vertices as unvisited, then create the unvisited set, which is a collection of all
 undiscovered nodes.
@@ -70,13 +62,12 @@ originally set to infinity.
 4) We update the cost[U] + weight of UV if it counts a lower cost than the existing cost[v].
 5) We mark the code as visited and remove it from the unvisited collection once we have
 finished taking into account all of the unvisited neighbors of this particular node. There
-will be no further visit to this node [3].
-6) if the destination has been checked off as visited or if the shortest distance between nodes
-in the unvisited set is infinite, then the algorithm is then stopped. There is no
+will be no further visit to this node.
+6) if the destination has been checked off as visited or if the shortest distance between nodes in the unvisited set is infinite, then the algorithm is then stopped. There is no
 connection between the node and the other nodes that haven't been visited.
 7) As an alternative, we can choose the unvisited node marked with the least tentative
 distance, set it as the new current node, and then repeat these steps U–V times, or until all
-the vertices have been visited.[3]
+the vertices have been visited.
 
 ## Getting Started:
 
@@ -130,11 +121,11 @@ degree.
 the results of this project include: 
 
 Three different source and destination vertices were used to test the results using this
-code. As shown in table 1, when the source vertex 1 and the destination node 150 were inputted,
-the program outputted the distance cost of each subpath, and the cost of the total path. The same
-is done for source vertex 1 and destination vertex 101, and lastly source vertex 5 and destination
-vertex 80. For more details about the code, please refer to the attached file containing the code,
-where a step by step outline for the code is shown
+code. As shown in table 1, when the source vertex 1 and the destination node 150 were inputted, the program outputted the distance cost of each subpath, and the cost of the total path. The same is done for source vertex 1 and destination vertex 101, and lastly source vertex 5 and destination vertex 80. For more details about the code, please refer to the attached file containing the code, where a step by step outline for the code is shown
+
+
+![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/ac6e43a1-61f9-4c6c-ad17-c6d9fc40d8ad)
+
 
 
 
