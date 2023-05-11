@@ -48,7 +48,7 @@ column, respectively. The third column is the “weight” or the cost to get be
 
 ### Algorithm explained:
 
-A graph is a mathematical construct consisting of sets of vertices and edges. Dijiktra’s algorithm calculates the lowest cost or "cheapest way" to travel between two points or vertices in a <b>weighted graph</b>. The algorithm utilizes nodes to represent graph points and assigns them tentative distance values to determine the shortest path from the source node to other nodes in the graph.
+Dijiktra’s algorithm calculates the lowest cost or "cheapest way" to travel between two points or vertices in a <b>weighted graph</b>. The algorithm utilizes nodes to represent graph points and assigns them tentative distance values to determine the shortest path from the source node to other nodes in the graph.
 
 The steps of the algorithm go as follows: 
 
@@ -74,59 +74,27 @@ the vertices have been visited.
 To get the project running, there's a couple of programs and steps needed.
 
 ### Built With:
-The frameworks and libraries used within this project are:
-* [![Scikit-learn][scikit-learn.js]][scikit-learn-url]
-* [![TensorFlow][Tensorflow.js]][Tensorflow-url]
-* [![NumPy][NumPy.js]][NumPy-url]
-* [![Matplotlib][Matplotlib.js]][Matplotlib-url]
+
+Language used: [![C++](https://img.shields.io/badge/-C++-blue?style=flat&logo=C%2B%2B&logoColor=white)]()
+IDE used: [![Built with Visual Studio Code](https://img.shields.io/badge/Built_with-Visual_Studio_Code-blue.svg)](https://code.visualstudio.com/)
 
 ### Prerequisites:
 
-1. Python: PyCharm is an IDE for Python development. 
-2. PyCharm:  you can download Pycahrm from JetBrains website.
-3. Operating system: PyCharm is available for Windows, macOS, and Linux. 
-4. Hardware requirements: PyCharm has minimum hardware requirements, including a multi-core processor, at least 4 GB of RAM, and a minimum screen resolution of 1024x768.
-5. Tensorflow, Scikit-learn, NumPy, Matplotlib installed on your computer
+1. A C++ compiler such as GCC or Clang should be installed on your system.
+2. A text editor or Integrated Development Environment (IDE) to edit and run the code. Ex: Visual Studio Code, Sublime Text, or Code::Blocks.
+3. The standard C++ library should be available on your system, since the code uses C++ library headers,  which include <limits>, <vector>, <iostream>, and <fstream>.
 
 ### Steps to run the code:
 
-1. Download the “model-selection-via-cross-validation” zip file. 
-
-To do that, simply press on the zip file, then press "view raw" as shown below to download it:
-
-![image](https://github.com/SaliElloh/model-selection-via-cross-validation/assets/112829375/2412942f-c491-4f77-865c-7c7ae27c8a22)
-
-All the files inside that zip files are uploaded seperately as well.
-
-3. Extract all files found in the zip file:
-
-    In the file, you’ll find 6 files, titled:
-
-     a. CVfor0to12:  performs the k fold cv using the given training data to select the optimal
-degree.
-      b. Optimal Degree_trained: after finding d*, perform linear regression for  all the data using the optimal degree found: finds the polynomial coefficients, and fit
-      
-      c. CVfor12Only: performs k fold cv to select the optimal regularizer value, λ*
-      
-      d. Optimal alpha_trained: performs ridge regression for λ* selected using all the data
-      
-      e. Test.csv: contains all the test data used in the project
-      
-      f. Train.csv: contains all the training data used in the project
-      
-3. Run each file separately to get the final results of the project
-
-
+ Download the "dijkstras-algorithm" zip file found in the uploaded files and use the files inside it to run the code. 
+    
 ## Results: 
-the results of this project include: 
 
-Three different source and destination vertices were used to test the results using this
-code. As shown in table 1, when the source vertex 1 and the destination node 150 were inputted, the program outputted the distance cost of each subpath, and the cost of the total path. The same is done for source vertex 1 and destination vertex 101, and lastly source vertex 5 and destination vertex 80. For more details about the code, please refer to the attached file containing the code, where a step by step outline for the code is shown
-
+This code was tested using three different source and destination vertices. The program outputted the distance cost of each subpath and the total cost for the path when source vertex 1 and destination node 150 were inputted. The same test was repeated for source vertex 1 and destination vertex 101, and source vertex 5 and destination vertex 80. 
+    
+Refer to the attached file which includes a step-by-step outline of the code
 
 ![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/ac6e43a1-61f9-4c6c-ad17-c6d9fc40d8ad)
-
-
 
 
 <!-- LICENSE -->
@@ -142,7 +110,7 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments:
 
-* Special thanks to Professor Luis Ortiz at the University of Michigan - Dearborn for assigning and helping with this project in his Computational Learning class.
+* Special thanks to Professor Jin Lu at the University of Michigan - Dearborn for assigning and helping with this project in his Algorithm Analysis and Design class. 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -150,12 +118,6 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 [LinkedIn-url]: https://www.linkedin.com/in/salielloh12/
 [Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
 [Tensorflow-url]: https://www.tensorflow.org/
-[NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
-[NumPy-url]: https://numpy.org/
-[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
-[Matplotlib-url]: https://matplotlib.org/
-[scikit-learn.js]: https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white
-[scikit-learn-url]:https://scikit-learn.org/
 
 
 
