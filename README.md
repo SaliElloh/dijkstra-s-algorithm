@@ -76,6 +76,10 @@ IDE used: [![Built with Visual Studio Code](https://img.shields.io/badge/Built_w
 ### Steps to run the code:
 
  Download the "dijkstras-algorithm" zip file found in the uploaded files.
+ 
+To do that, simply press on the zip file, then press "view raw" as shown below to download it:
+![image](https://github.com/SaliElloh/dijkstra-s-algorithm/assets/112829375/01584c60-8d92-489e-b834-d8f05f16fe90)
+
     
 ## Results: 
 
